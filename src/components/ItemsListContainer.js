@@ -1,12 +1,18 @@
 import React from "react";
+import ItemCount from "./ItemCount";
 
 
-function Contenedor (){
+function ItemsListContainer (){
+
+    const onAdd = () => {
+      alert (`gracias, por tu compra`)
+    }
+        
     return(
-        <div className=" container mx-auto px-4 w-80 grid gap-x-8 gap-y-4 grid-cols-3 bg-cyan-800">
-            aasd
+        <div className=" container mx-auto px-4 w-80 ">
+            <ItemCount stock={5} onAdd={onAdd}/>
         </div>
     );
 }
 
-export default Contenedor;
+export default ItemsListContainer;

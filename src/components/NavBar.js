@@ -4,18 +4,18 @@ import CartWidget from './CartWidget';
 
 function NavBar() {
     return (
-        <nav className='flex justify-between items-start h-16 bg-red-800 text-white relative shadow-sm'>
-            <div>
-                LOGO
+        <nav className='flex justify-between items-center bg-red-600 py-2'>
+            <div className='flex w-11/12 justify-between items-center'>
+                <img className='h-12 w-12' src='https://static.vscdn.net/images/logos/1598902758-mercadolibre.com-l.png' alt='Logo' />
+
+                <ul className='flex gap-6 cursor-pointer text-white font-semibold '>
+                    <li>Inicio</li>
+                    <li>Productos</li>
+                    <li>Contacto</li>
+                </ul>
+
+                <CartWidget/>
             </div>
-            <div className='px-4 cursor-pointer md:hidden'>
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h7" />
-                </svg>
-            </div>
-            <div className='pr-8 hidden md:block'>
-            </div>
-            <CartWidget/>
         </nav>
     );
 }
