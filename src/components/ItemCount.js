@@ -22,6 +22,7 @@ function ItemCount({ stock, initial = 1, onAdd }) {
                 <button className="text-x1" onClick={sumar}>+</button>
             </div>
             <button className="bg-indigo-600 p-3 text-white" onClick={onAdd}>comprar</button>
+
         </>
     );
 }
